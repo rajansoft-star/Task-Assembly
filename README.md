@@ -6,12 +6,12 @@ A date in milliseconds.
 (Optional) museum to ignore
 
 It will return:
-The month of the search
-The year of the search
-The total visitors for the month, not counting the ignored museum
-The museum with the highest number of visitors, not counting the ignored museum
-The museum with the lowest number of visitors, not counting the ignored museum
-The ignored museum.
+1.	The month of the search
+2.  The year of the search
+2.  The total visitors for the month, not counting the ignored museum
+2.  The museum with the highest number of visitors, not counting the ignored museum
+2.  The museum with the lowest number of visitors, not counting the ignored museum
+2.  The ignored museum.
 
 
 # Getting Started
@@ -35,6 +35,7 @@ TODO: Guide users through getting your code up and running on their own system. 
 # Sample input and ouput
 
   Input : GET /api/visitors?date=1404198000000
+  ```json
   OutPut:
   {
     "attendance": {
@@ -51,7 +52,7 @@ TODO: Guide users through getting your code up and running on their own system. 
        total: 60535
     }
 }
-
+```
   
    
 # Testing service Rest Client package
@@ -59,9 +60,9 @@ TODO: To Test application with Postman/swagger/RestClient,Here explained RestCli
 1.	Install RestClient ![image](https://user-images.githubusercontent.com/24937459/146165270-d212b037-3db4-4b82-9f25-5e51db9f63b0.png)
 2.  Create rest.http
 3.	Add Method Type and endpoint 
-      GET  http://localhost:7000/Get
+      GET http://localhost:7070/visitors?date=1404198000000
 4.	Add Content-Type
 5.	Add Content boady
 6.	Click Send Request 
- ![image](https://user-images.githubusercontent.com/24937459/146163621-85119889-fe99-4194-918b-e9118dd5ab44.png)
+
 
